@@ -1,0 +1,62 @@
+/* 
+    Created on : 20.10.2016
+    Author     : Daniel Kleebinder
+
+    (c) Please do not copy or redistribute this source!
+*/
+
+
+
+/****************************** START OF NAVBAR ******************************/
+
+/* Default Navbar */
+.navbar > .container-fluid {
+    background-color: #666;
+}
+.navbar-nav > li:hover {
+    background-color: #aaa;
+}
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:focus {
+    color: #eee;
+}
+
+/* Navbar Brand */
+.navbar .navbar-brand,
+.navbar .navbar-brand:focus {
+    color: #eee;
+    /* Navbar brand in uppercase*/
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-size: 25px;
+    padding-left: 40px;
+}
+.navbar .navbar-brand:hover {
+    color: #ACCE2F;
+}
+
+/* Navbar Links */
+.navbar .navbar-nav > .active > a, 
+.navbar .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: #bbb;
+}
+.navbar .navbar-nav li a {
+    color: #BAD13C;
+}
+
+/* Responsive Navbar */
+.navbar .navbar-toggle {
+    /* Change the icons color */
+    border-color: #BAD13C;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:active {
+    background-color: #999;
+}
+.navbar .navbar-toggle .icon-bar {
+    /* Change the icons color */
+    background-color: #BAD13C;
+}
+/******************************* END OF NAVBAR *******************************/

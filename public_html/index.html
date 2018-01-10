@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<!--
+        (c) KLEEBINDER Daniel
+        FH Technikum Wien
+        University of Applied Sciences
+        23.09.2016
+-->
+
+<html>
+    <!-- Start of head/meta information-->
+    <head>
+        <title>INNOVATE</title>
+
+        <!-- Set the charset for special characters and the viewport for correct responsive design -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bind stylesheets to the HTML -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/custom-bootstrap.css"/>
+
+        <!-- Bind javascript libraries to the HTML -->
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <!-- Set the favicon -->
+        <link rel="icon" href="res/favicon.ico"/>
+    </head>
+
+    <!--
+                Start of page body. Use the data-spy and data-offset attributes from bootstrap
+                to allow the navbar to change the active tab when scrolling the page.
+    -->
+    <body data-spy="scroll" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Innovate</a>
+                </div>
+                <!-- Single page navigation: Use the '#' in <a>-tags to jump to certain IDs inside a single page -->
+                <!--
+                    Use the unordered list (<ul>) for example for navigation:
+                     .) <ul>: Start of an unordered list
+                     .) <ol>: Start of an ordered list
+                     .) <li>: List item
+                -->
+                <div id="navigation" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#start" class="page-scroll">Start</a></li>
+                        <li><a href="#project" class="page-scroll">Project</a></li>
+                        <li><a href="#team" class="page-scroll">Team</a></li>
+                        <li><a href="#technology" class="page-scroll">Technology</a></li>
+                        <li><a href="#gallery" class="page-scroll">Gallery</a></li>
+                        <li><a href="#news" class="page-scroll">News</a></li>
+                        <li><a href="#findus" class="page-scroll">Find Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Scroll to top button -->
+        <div id="scrolltop">
+            <span id="scrolltop-container" class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+
+        <!-- Header of the page -->
+        <header id="start">
+            <!-- Use a bootstrap container to center the element and make it responsive -->
+            <div class="container">
+                <p class="header-text">welcome to</p>
+                <ul class="centered">
+                    <li><span class="header-aquo">&raquo;</span></li>
+                    <li><img class="img-responsive" src="res/Logo_mirror.png" alt="Cannot load image"/></li>
+                    <li><span class="header-aquo">&laquo;</span></li>
+                </ul>
+                <a class="header-btn page-scroll" href="#project">Read more ...</a>
+            </div>
+        </header>
+
+        <!-- Start the main part of the page-->
+        <main>
+            <!-- Project section providing information about the project itself-->
+            <section id="project">
+                <!-- Use a bootstrap container to center the element and make it responsive -->
+                <div class="container">
+                    <h2 class="text-center">Project Details</h2>
+                    <div class="col-md-12">
+                        <!--
+                                Pull everything to the left, maybe use the media classes (since bootstrap 3.3.0)
+                                in later applications:
+                                        .) media
+                                        .) media-left
+                                        .) media-object
+                                        .) media-body
+                                        .) media heading
+                        -->
+                        <div class="pull-left">
+                            <img class="img-responsive img-thumbnail" src="res/bsp_bild2.jpg" alt="Cannot load image"/>
+                        </div>
+                        <div>
+                            <h3>Mission</h3>
+                            <p>
+                                Nulla non tincidunt turpis. In hendrerit gravida ex eget convallis. Morbi posuere urna sed sem luctus pellentesque.
+                                Vivamus quis est maximus, finibus eros commodo, luctus orci. Suspendisse vitae felis posuere, rutrum neque et, fermentum urna.
+                                Nullam blandit sodales efficitur. Mauris dapibus porttitor nisl ut dictum. Phasellus ornare quam tortor, vitae hendrerit
+                                ex porta pellentesque. Integer dictum ex quis eros ullamcorper, et malesuada velit aliquam.<br/><br/>
+                                Cras cursus nulla facilisis magna consequat tincidunt. Nam gravida facilisis lacus nec tempor. Sed ut ex vel lorem pulvinar
+                                dignissim. Maecenas cursus lectus odio, eget elementum leo ornare vel. In hac habitasse platea dictumst. Ut mattis mollis nunc,
+                                eget mollis justo feugiat eget. Nulla ultrices orci in accumsan congue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Pull everything to the right -->
+                        <div class="pull-right">
+                            <!-- Make the image responsive and give it the bootstrap thumbnail style -->
+                            <img class="img-responsive img-thumbnail" src="res/bsp_bild3.jpg" alt="Cannot load image"/>
+                        </div>
+                        <div>
+                            <h3 class="text-right">Goals</h3>
+                            <p>
+                                Nullam convallis, enim ac mattis lobortis, massa augue sollicitudin dui, at placerat enim sapien at tellus. Fusce at pharetra
+                                neque. Fusce commodo ante vel quam placerat placerat. Nam nulla nisi, pretium a facilisis quis, suscipit ut enim. Suspendisse
+                                libero enim, placerat bibendum velit ultrices, aliquet congue odio. Cras et tristique quam, vitae ultrices magna. Vestibulum
+                                imperdiet volutpat nisi, sit amet euismod magna pretium sit amet. Duis sit amet enim aliquam, egestas sem in, pharetra mi.
+                                Sed vulputate tincidunt massa et dapibus. Nulla elit nunc, iaculis non rutrum vitae, lobortis in justo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team section providing information about the team working on the project -->
+            <section id="team">
+                <!-- Use a bootstrap container to center the element and make it responsive -->
+                <div class="container">
+                    <h2 class="text-center">Innovate Team</h2>
+                    <div class="row">
+                        <!--
+                                For:
+                                        .) extra small: one container per row
+                                        .) small	  : two containers per row
+                                        .) medium	  : three containers per row
+                        -->
+                        <div class="team-member-container col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-member">
+                                <h3>Team Member #1</h3>
+                                <div>
+                                    <!-- Make the image responsive and give it the bootstrap circle style (every image in this container) -->
+                                    <img class="img-responsive img-circle centered" src="res/team_member1.jpg" alt="Team Member 1 (Cannot load image)"/>
+                                    <p>
+                                        In hac habitasse platea dictumst. Nam suscipit elementum mauris, vel tincidunt enim feugiat eu. Interdum et malesuada
+                                        fames ac ante ipsum primis in faucibus.<br/>
+                                        Suspendisse fringilla sem vitae purus varius, sit amet hendrerit augue hendrerit. Nam ut sem ac magna blandit venenatis.
+                                        Curabitur tempus, odio a porta ultricies, velit nisi tincidunt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-container col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-member">
+                                <h3>Team Member #2</h3>
+                                <div>
+                                    <img class="img-responsive img-circle centered" src="res/team_member2.jpg" alt="Team Member 2 (Cannot load image)"/>
+                                    <p>
+                                        In pharetra ut turpis in elementum. Nulla at iaculis nunc. Nam ornare, sapien non maximus mattis, ante est molestie
+                                        nunc, sit amet aliquam ipsum felis vitae nibh. Quisque purus mi, faucibus in faucibus sed, volutpat id magna.<br/><br/>
+                                        Donec efficitur pharetra metus, vitae tempor turpis consequat in. Sed molestie sapien sed dolor sodales posuere. Class
+                                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-container col-xs-12 col-sm-6 col-md-4">
+                            <div class="team-member">
+                                <h3>Team Member #3</h3>
+                                <div>
+                                    <img class="img-responsive img-circle centered" src="res/team_member3.jpg" alt="Team Member 3 (Cannot load image)"/>
+                                    <p>
+                                        Cras consectetur nisl felis, tempor egestas augue rhoncus in. Nulla et congue sem. Vivamus dignissim tellus neque, a
+                                        tincidunt nulla scelerisque id. Suspendisse ullamcorper suscipit pellentesque. Donec congue velit sit amet viverra tempor.<br/>
+                                        Praesent convallis bibendum magna, id gravida lorem bibendum finibus. Cras et ligula justo. Duis interdum nulla dui,
+                                        sed gravida massa imperdiet eget.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology section showing a video about our used technologies -->
+            <section id="technology">
+                <!-- Use a bootstrap container to center the element and make it responsive -->
+                <h2 class="text-center">Technology</h2>
+                <div class="container">
+                    <div class="col-md-5">
+                        <img id="html5-img" class="pull-left img-rounded" src="res/html5.png" alt="Cannot load image"/>
+                        <h3>HTML5</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis dictum nisi. Proin egestas volutpat erat, vitae mollis neque lacinia vitae. Quisque fringilla luctus nibh, at venenatis erat sodales sit amet. Morbi fringilla tortor vel orci aliquet dapibus.
+                            <br/><br/>
+                            Donec ut semper felis, et mattis enim. Cras ut dapibus risus. In sagittis dolor nec sapien vulputate convallis. Duis in leo id ligula consectetur cursus sed sit amet mi.
+                            <br/><br/>
+                            Nam est mauris, consectetur eu metus a, vestibulum tempus sem. In iaculis libero in suscipit blandit. Cras sollicitudin eros et erat gravida rutrum. Integer dapibus ullamcorper elit, a vestibulum ante facilisis nec. Phasellus ut turpis sem.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <video id="what-is-html5" class="img-rounded" onclick="playPauseVideo()">
+                            <source type="video/mp4" src="res/vid/What is HTML5_.mp4"/>
+                            <source type="video/ogg" src="res/vid/What is HTML5_.ogg"/>
+                            <p>Your browser does not support HTML5 videos (MP4, OGG)!</p>
+                        </video>
+
+                        <div class="video-controls">
+                            <div class="pull-left" style="width: 100%;">
+                                <input id="seek-bar" type="range" min="0" max="1000" value="0">
+                            </div>
+                            <div class="pull-left" style="margin-left: 10px;">
+                                <span id="play-pause" onclick="playPauseVideo()" class="glyphicon glyphicon-play"></span>
+                                <span id="step-forward" onclick="stepVideoForward()" class="glyphicon glyphicon-step-forward"></span>
+                            </div>
+                            <span id="seek-bar-time" class="pull-left">0:00 / 0:00</span>
+                            <div class="pull-right" style="margin-right: 10px;">
+                                <span id="mute-unmute" onclick="muteUnmuteVideo()" class="glyphicon glyphicon-volume-up"></span>
+                                <span id="fullscreen" onclick="fullscreenVideo()" class="glyphicon glyphicon-fullscreen"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="jquery-container">
+                    <div class="container">
+                        <img id="jquery-img" class="pull-left img-rounded" src="res/jquery.png" alt="Cannot load image"/>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum eget magna cursus congue. Fusce hendrerit suscipit diam ac porttitor. Sed non venenatis velit. Suspendisse consectetur metus sed bibendum sollicitudin. Vivamus sed nulla at odio posuere imperdiet at vitae arcu.
+                            <br/><br/>
+                            Donec lectus odio, tempus sit amet magna ut, volutpat molestie mauris. Morbi non ante ante. Aliquam velit odio, luctus vitae finibus ut, lacinia eget dui. Vivamus ornare sit amet felis id vulputate. Vestibulum ut elit elit. Aenean tempor mauris in porta porttitor. Morbi vehicula semper congue. Quisque sollicitudin mi et venenatis semper. Morbi at ex congue, pretium elit et, aliquet lectus.
+                            <br/><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra augue eu dictum sodales. Etiam vel magna rhoncus eros viverra cursus. Maecenas nec magna semper nisi iaculis pharetra nec in sapien. Curabitur sodales pretium urna feugiat tristique. Praesent bibendum mauris sapien, nec elementum lectus cursus a. Phasellus sit amet pharetra est. Quisque mattis et ligula in tristique. Nunc vitae elit quis erat vehicula gravida.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img id="bootstrap3-img" class="pull-right img-rounded" src="res/bootstrap.png" alt="Cannot load image"/>
+                    <h3>Bootstrap 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum eget magna cursus congue. Fusce hendrerit suscipit diam ac porttitor. Sed non venenatis velit. Suspendisse consectetur metus sed bibendum sollicitudin. Vivamus sed nulla at odio posuere imperdiet at vitae arcu.
+                        <br/><br/>
+                        Donec lectus odio, tempus sit amet magna ut, volutpat molestie mauris. Morbi non ante ante. Aliquam velit odio, luctus vitae finibus ut, lacinia eget dui. Vivamus ornare sit amet felis id vulputate. Vestibulum ut elit elit. Aenean tempor mauris in porta porttitor. Morbi vehicula semper congue. Quisque sollicitudin mi et venenatis semper. Morbi at ex congue, pretium elit et, aliquet lectus.
+                        <br/><br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra augue eu dictum sodales. Etiam vel magna rhoncus eros viverra cursus. Maecenas nec magna semper nisi iaculis pharetra nec in sapien. Curabitur sodales pretium urna feugiat tristique. Praesent bibendum mauris sapien, nec elementum lectus cursus a. Phasellus sit amet pharetra est. Quisque mattis et ligula in tristique. Nunc vitae elit quis erat vehicula gravida.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Gallery section showing images from the project -->
+            <section id="gallery">
+                <!-- Use a bootstrap container to center the element and make it responsive -->
+                <div class="container">
+                    <h2>Gallery</h2>
+                    <div id="gallery-container" class="row separator">
+                        <!-- Create gallery dynamically here via JavaScript and JQuery -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- News section to keep our visitors up to date-->
+            <section id="news">
+                <!-- Use a bootstrap container to center the element and make it responsive -->
+                <div class="container">
+                    <h2>News</h2>
+                    <!--
+                        Use the table element for our news updates:
+                         .) <table>  : Start of a new table
+                         .) <caption>: Table Header
+                         .) <th>     : Column Header
+                         .) <tr>     : Table Row
+                         .) <td)     : Table Cell
+                    -->
+                    <!--
+                            Use the bootstrap table layout and make it responsive. Tables are not responsive by default, but
+                            bootstrap allows developers to make them kinda responsive at least with the "table-responsive"
+                            class.
+                    -->
+                    <table class="table table-striped table-hover table-responsive">
+                        <tr>
+                            <!-- Pull the text to the right -->
+                            <th class="text-right">10. September 2016</th>
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusam et justo duo dolores et ea rebum. Lorem
+                                ipsum dolor sit amet, consetetur sadipscing.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-right">20. July 2016</th>
+                            <td>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-right">28. June 2016</th>
+                            <td>
+                                In sed odio scelerisque, pretium urna et, fermentum quam. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-right">30. March 2016</th>
+                            <td>
+                                Curabitur ut nibh at lorem aliquet congue sed a elit. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-right">13. January 2016</th>
+                            <td>
+                                Curabitur laoreet mauris in eros vulputate laoreet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-right">03. December 2015</th>
+                            <td>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Find us section so people across the world can find us easily -->
+            <section id="findus">
+                <!-- Use a bootstrap container to center the element and make it responsive -->
+                <div class="container">
+                    <h2>Find Us</h2>
+                    <!-- Use frames to embed google maps-->
+                    <iframe id="google-maps"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.303404166157!2d16.375135415824108!3d48.23928665205025
+                            !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d064f6ed971cf%3A0x99fec738bbb12f9d!2sFH+Technikum+Wien!5e0!3m2!1sde
+                            !2sat!4v1474635064747"></iframe>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer for further information about the website/project-->
+        <footer>
+            <!-- Use a bootstrap container to center the element and make it responsive -->
+            <div class="container">
+                <!-- Use the bootstrap row class for correct responsive design with the column sub classes -->
+                <div class="row">
+                    <!--
+                            For:
+                                    .) extra small: one container per row
+                                    .) small	  : two containers per row
+                                    .) medium	  : four containers per row
+                    -->
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h4>Social Networks</h4>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Snapchat</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Address</li>
+                            <li>Website</li>
+                            <li>E-Mail</li>
+                            <li>Service-Hotline</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h4>Terms of Use</h4>
+                        <ul>
+                            <li>Copyright</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h4>About</h4>
+                        <ul>
+                            <li>UAS Technikum Wien</li>
+                            <li>Bachelor Informatics</li>
+                            <li>1200 Vienna</li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsive Copyright -->
+                    <div class="copyright
+                         col-xs-offset-0 col-xs-10 col-xs-offset-2
+                         col-sm-offset-1 col-sm-10 col-sm-offset-1
+                         col-md-offset-1 col-md-10 col-md-offset-1">
+                        <p class="text-center">© 2016 Kleebinder Daniel | All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
